@@ -1,0 +1,16 @@
+@import '../style/style.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bkColor;
+  min-width: 640px;
+
+  * {
+    outline: none;
+  }
+
+  [draggable] {
+    cursor: pointer;
+  }
+}

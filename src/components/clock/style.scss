@@ -1,0 +1,101 @@
+@import '../../style/style.scss';
+
+// .container * {pointer-events: none;}
+.dragover {
+  border: 5px solid #00F;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+
+
+  .clock {
+    width: 320px;
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: $darker;
+    border-radius: 5px;
+
+    .sep {
+      float: left;
+      width:1px;
+      height: 50px;
+      margin-top:20px;
+      background-color: $foreColor;
+    }
+
+    .date {
+      float: left;
+      width: 100px;
+      height: 93px;
+      text-align: center;
+
+      input[type="text"] {
+        border: none;
+        width: 100px;
+        text-align: center;
+        background-color: $darker;
+        color: $white;
+      }
+      input[type="text"].days {
+        font-size: 50px;
+        line-height: 40px;
+        height: 40px;
+      }
+      input[type="text"].months {
+        font-size: 25px;
+        line-height: 30px;
+        height: 25px;
+        letter-spacing: 2px;
+      }
+      input[type="text"].years {
+        font-size: 18px;
+        line-height: 22px;
+        height: 22px;
+        letter-spacing: 3px;
+      }
+      span.date-sep {
+        color: $foreColor;
+        font-size: 70px;
+      }
+    }
+
+    .hours {
+      float: left;
+      width: 215px;
+      height: 93px;
+      text-align: center;
+
+      input[type="text"] {
+        border: none;
+        width: 90px;
+        height: 93px;
+        font-size: 70px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: $darker;
+        color: $white;
+      }
+      input[type="text"].hour {
+        text-align: right;
+      }
+      input[type="text"].minute {
+        text-align: left;
+      }
+
+      .hour-sep {
+        width: 10px;
+        height: 93px;
+        font-size: 70px;
+        text-align: center;
+        background-color: $darker;
+        color: $white;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../style/style.scss';
+
+.container * {pointer-events: none;}
+.dragover {
+  border: 5px solid #00F;
+}
+
+.container {
+  float: left;
+  // background-color: #FF0;
+  width: 25%;
+  height: 20px;
+}

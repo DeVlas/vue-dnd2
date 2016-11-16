@@ -1,0 +1,51 @@
+@import '../../style/style.scss';
+
+.container {
+  margin-top: 50px;
+  max-width: 1200px;
+  width: 100%;
+  height: 50px;
+
+  ul {
+    list-style: none;
+    padding: 0 10px 0 10px;
+
+    li {
+      display: block;
+      width: 100%;
+      height: 40px;
+      text-align: left;
+      margin-bottom: 50px;
+
+      span.weekday {
+        display: block;
+        height: 20px;
+        color: $foreColor;
+        font-size: 12px;
+      }
+
+      div.bar-day {
+        width: 100%;
+        height: 10px;
+        background-color: $mediumBlue;
+        border-radius: 5px;
+
+        .bar-workout {
+          position: absolute;
+          height: 10px;
+          border-radius: 5px;
+          background-color: $lightBlue;
+          width: 600px;
+        }
+        .bar-launch {
+          position: absolute;
+          height: 10px;
+          border-radius: 5px;
+          background-color: $foreRed;
+          width: 400px;
+        }
+
+      }
+    }
+  }
+}
