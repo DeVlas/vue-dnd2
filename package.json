@@ -1,0 +1,11 @@
+{
+  "name": "vue-dnd2",
+  "version": "1.0.0",
+  "description": "Plugin for vue2 to apply drag n drop usability",
+  "main": "vue-dnd2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iFgR",
+  "license": "ISC"
+}
