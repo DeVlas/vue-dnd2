@@ -30,6 +30,16 @@ You can decide which elements will be able to be draggable or droppable or both.
 ```html
 <div v-droppable.cart="foo"></div>
 ```
+```javascript
+...
+methods: {
+  foo: function ($ev) {
+    // $ev contains the draggable object
+  }
+}
+```
+
+
 | Param      | Value     |
 |------------|-----------|
 | cart       | The __Group__. You can choose a group of elements that will interact with drag n 'drop |
